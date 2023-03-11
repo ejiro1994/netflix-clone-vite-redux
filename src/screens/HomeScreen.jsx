@@ -1,8 +1,8 @@
 import React from 'react'
-import Banner from './Banner'
-import Navbar from './Navbar'
-import requests from './Requests'
-import Row from './Row'
+import Banner from '../Banner'
+import Navbar from '../Navbar'
+import requests from '../Requests'
+import Row from '../Row'
 
 const HomeScreen = () => {
   return (

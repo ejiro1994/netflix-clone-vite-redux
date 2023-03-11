@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
+import { AvatarLogo, NetflixLogo } from './utility/constants'
 
 const Navbar = () => {
   const [showNav, setShowNav] = useState(false)
@@ -24,20 +25,8 @@ const Navbar = () => {
   return (
     <Nav showNav={showNav}>
       <NavContents>
-        <NavLogo
-          classname='nav__logo'
-          src={
-            'https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png'
-          }
-          alt='logo'
-        />
-        <NavAvatar
-          classname='nav__avatar'
-          src={
-            'https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png'
-          }
-          alt='avatar'
-        />
+        <NavLogo classname='nav__logo' src={NetflixLogo} alt='logo' />
+        <NavAvatar classname='nav__avatar' src={AvatarLogo} alt='avatar' />
       </NavContents>
     </Nav>
   )
